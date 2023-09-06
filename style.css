@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+nav {
+    background-color: black;
+    color: white;
+}
+
+#lock {
+    font-size: 30px;
+    color: #74c0fc;
+    animation: change 3s linear infinite;
+}
+
+@keyframes change {
+
+    0%,
+    100% {
+        color: #74c0fc;
+    }
+
+    50% {
+        color: #146ebe;
+    }
+}
+
+.container {
+    font-weight: bold !important;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    /* display: none; */
+}
+
+table,
+tr,
+th {
+    border: 2px solid black;
+}
+
+#password:focus,
+#password:active {
+    outline: none;
+    border: none;
+}
+
+label {
+    min-width: 85px;
+}
+
+form button {
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    padding: 5px 20px !important;
+    font-size: 15px !important;
+}
+
+@media (max-width:455px) {
+    table {
+        font-size: 80%;
+    }
+}
+
+form input{
+    padding: 3px 10px;
+}
+
+.paste{
+    cursor: pointer;
+}
+
+.paste:hover{
+    color: #74c0fc;
+}
+
+.delete{
+    color: red;
+}
